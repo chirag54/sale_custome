@@ -1,0 +1,26 @@
+<odoo>
+  <record id="view_sale_profit_report_tree" model="ir.ui.view">
+    <field name="name">sale.profit.report.tree</field>
+    <field name="model">sale.profit.report</field>
+    <field name="arch" type="xml">
+      <list>
+        <field name="order_id"/>
+        <field name="date_order"/>
+        <field name="partner_id"/>
+        <field name="amount_total"/>
+        <field name="cost_total"/>
+        <field name="profit_total"/>
+      </list>
+    </field>
+  </record>
+
+  <record id="action_sale_profit_report" model="ir.actions.act_window">
+    <field name="name">Sales Profit Report</field>
+    <field name="res_model">sale.profit.report</field>
+    <field name="view_mode">list</field>
+    <field name="help">Sales profitability per order</field>
+  </record>
+
+  <menuitem id="menu_sale_profit_report_root" name="Sales Profit Report"
+            parent="sale.sale_order_menu" action="action_sale_profit_report"/>
+</odoo>
