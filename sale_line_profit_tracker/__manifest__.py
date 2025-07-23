@@ -1,0 +1,16 @@
+{
+    "name": "Sales Order Line Profit Tracker",
+    "version": "18.0.1.0.0",
+    "author": "Chirag Chauhan",
+    "license": "AGPL-3",
+    "category": "Sales",
+    "summary": "Track profitability on Sales Order Lines",
+    "depends": ["sale", "product"],
+    "data": ["views/sale_order_line_view.xml"],
+    "installable": True,
+    "application": False,
+    "development_status": "Alpha",
+    "maintainers": ["chirag"],
+    'price': 10.00,
+    'currency': 'EUR',
+}
